@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 11, 2016 9:54:17 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mss.Auth" table="AUTH" schema="JAVA" optimistic-lock="version">
+        <id name="username" type="string">
+            <column name="USERNAME" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
